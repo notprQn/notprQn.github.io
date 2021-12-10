@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* 
+Fontes:
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+*/
+/* 
+
+001d3d
+003566
+ffc300
+ffd60a
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 1rem 3rem;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #001d3d;
+    background-color: #fffade;
+}
+#apresentacao > img{
+    width: 200px;
+    border-radius: 50%;
+}
+#apresentacao > div{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+body > nav > a{
+    font-size: x-large;
+}
+.sem-serifa{
+    font-family: 'Montserrat', sans-serif;
+    color: #003566;
+}
+.centralizar-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#objetivos{
+    margin-top: 4rem;
+}
+.carrosel{
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    /* outline: 3px solid black; */
+}
+.carrosel > ul{
+    list-style: none;
+    display: flex;
+    width: 1050px;
+    height: 250px;
+}
+.carrosel-item{
+    width: 350px;
+    height: 250px;
+}
+.carrosel > ul > li{
+    position: relative;
+    animation: slides 15s infinite ease-out;
+}
+/* .carrosel > ul > li > div > h3{
+    animation: temp 5s infinite ease-out;
+}
+@keyframes temp {
+    0%{color: blue;}
+    50%{color: red;}
+    1000%{color: blue;}
+} */
+@keyframes slides {
+    0%{left: 0;}
+    20%{left: 0;}
+    30%{left: -350px;}
+    50%{left: -350px;}
+    60%{left: -700px;}
+    90%{left: -700px;}
+    100%{left: 0px;}
+}
+#tecnologias{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#tecnologias > h2{
+    margin-bottom: 8rem;
+}
+#tecnologias > div > img{
+    margin: 1rem;
+}
+.flexor{
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    /* PC */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+    body > nav > div > a{
+        padding: 0 0.3rem;
+    }
+    #apresentacao {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 768px) {
+    /* Celular */
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    body{
+        padding: 1rem 0;
+    }
+    body > nav > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    body > nav > div > a{
+        padding: 0.3rem 0;
+    }
+    #apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #apresentacao > div{
+        text-align: center;
+    }
+}
