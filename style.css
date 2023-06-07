@@ -1,3 +1,304 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+div{
+  position: inherit;
+}
+
+a{
+  color: #f1f1f1;
+  font-family: "Prompt", "Roboto";
+  font-style: none;
+  padding-left: 20px;
+  z-index: 10;
+}
+
+.bloco{
+  padding: 20px;
+}
+
+.eu{
+  padding-left: 170px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+img{
+  display:block;
+  z-index: 1;
+  border-radius: 50%;
+  padding-left: 20px;
+}
+
+.link{
+  color: #1f1f1f;
+  font-family: "Prompt", "Roboto";
+  font-style: none;
+  padding-bottom: 100px;
+}
+
 body{
-    background-color: #f1f1f1;
-}   
+  background-color: #1f1f1f;
+}
+
+h2{
+  font-family: "Prompt", "Roboto";
+  color: #f1f1f1;
+  position: relative;
+  font-size: 200px;
+  padding-left: 20px;
+}
+
+.sobre{
+  font-family: "Prompt", "Roboto";
+  color: #1f1f1f;
+  font-size: 21px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: start;
+}
+
+.cursos{
+  font-family: "Prompt", "Roboto";
+  color: #1f1f1f;
+  font-size: 21px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: start;
+}
+
+.exp{
+  font-family: "Prompt", "Roboto";
+  color: #1f1f1f;
+  font-size: 21px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: start;
+}
+
+.contato{
+  font-family: "Prompt", "Roboto";
+  color: #1f1f1f;
+  font-size: 21px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: start;
+}
+
+.nome{
+  z-index: -1;
+}
+
+.bem-vindo{
+  font-family: "Prompt", "Roboto";
+  color: #f1f1f1;
+  position: relative;
+  font-size: 50px;
+  padding-left: 20px;
+  z-index: -1;
+}
+
+.modelo{
+  padding-left: 2px;
+  font-size: 16px;
+  width: 150px;
+}
+
+model-viewer{
+  width: 1495px;
+  height: 715px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hotspot{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: pink;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.hotspot[slot="hotspot-coffee"]{
+  --min-hotspot-opacity: .2;
+  background-color: blue;
+  width: 100px;
+  height: 100px;  
+}
+
+.hotspot[slot="hotspot-calendar"]{
+  --min-hotspot-opacity: .2;
+  background-color: blue;
+  width: 100px;
+  height: 100px;  
+}
+
+.hotspot[slot="hotspot-bird"]{
+  --min-hotspot-opacity: .2;
+  background-color: blue;
+  width: 100px;
+  height: 100px;  
+}
+
+.hotspot[slot="hotspot-cont"]{
+  --min-hotspot-opacity: .2;
+  background-color: blue;
+  width: 100px;
+  height: 100px;  
+}
+
+.annotation{
+  background-color: #f1f1f1;
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Prompt", "Roboto";
+  display: none;
+}
+:not(:defined) > * {
+  display: none;
+}
+
+.annotation[slot="annotation-sobre"]{
+  background-color: #f1f1f1;
+  position: absolute;
+  transform: translate(200px, -300px);
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  font-family: "Prompt", "Roboto";
+  font-size: 16px;
+  display: none;
+}
+
+.annotation[slot="annotation-cursos"]{
+  background-color: #f1f1f1;
+  position: absolute;
+  transform: translate(-600px, -200px);
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  font-family: "Prompt", "Roboto";
+  font-size: 16px;
+  display: none;
+}
+
+.annotation[slot="annotation-exp"]{
+  background-color: #f1f1f1;
+  transform: translate(200px, -50px);
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+  font-family: "Prompt", "Roboto";
+  font-size: 16px;
+  display: none;
+}
+
+.annotation[slot="annotation-cont"]{
+  background-color: #f1f1f1;
+  transform: translate(200px, -200px);
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+  font-family: "Prompt", "Roboto";
+  font-size: 16px;
+  display: none;
+}
+
+#view-buttonSobre {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#view-buttonCurso {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#view-buttonExp {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#view-buttonCont {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  transform: translate3d(-50%, -50%, 0);
+}
