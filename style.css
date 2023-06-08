@@ -204,8 +204,8 @@ model-viewer{
   transform: translate(200px, -50px);
   border-radius: 10px;
   padding: 10px;
-  width: 500px;
-  height: 400px;
+  width: 520px;
+  height: 450px;
   font-family: "Prompt", "Roboto";
   font-size: 16px;
   display: none;
