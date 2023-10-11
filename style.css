@@ -38,7 +38,9 @@ img{
   font-family: "Prompt", "Roboto";
   font-style: none;
   padding-bottom: 100px;
+  z-index: -1;
 }
+
 
 body{
   background-color: #1f1f1f;
@@ -48,8 +50,9 @@ h2{
   font-family: "Prompt", "Roboto";
   color: #f1f1f1;
   position: relative;
-  font-size: 200px;
   padding-left: 20px;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 10rem);
+  padding-left: clamp(0, 10vw, 10rem);
 }
 
 .sobre{
@@ -98,28 +101,30 @@ h2{
 
 .nome{
   z-index: -1;
+  
 }
 
 .bem-vindo{
   font-family: "Prompt", "Roboto";
   color: #f1f1f1;
   position: relative;
-  font-size: 50px;
+  font-size: clamp(1rem, -0.5rem + 5.333vw, 5rem);
   padding-left: 20px;
   z-index: -1;
 }
 
 .modelo{
   padding-left: 2px;
-  font-size: 16px;
+  font-size: 10px;
   width: 150px;
 }
 
 model-viewer{
-  width: 1495px;
-  height: 715px;
-  margin: 0 auto;
-  position: relative;
+  height: 100vh;
+  width: 100vw;
+  position:fixed;
+  top:0;
+  left:0;
 }
 
 .hotspot{
@@ -184,6 +189,12 @@ model-viewer{
   font-family: "Prompt", "Roboto";
   font-size: 16px;
   display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.annotation[slot="annotation-sobre"].active {
+  display: block;
+  opacity: 1;
 }
 
 .annotation[slot="annotation-cursos"]{
