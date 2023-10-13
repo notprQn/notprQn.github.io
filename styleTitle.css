@@ -1,11 +1,11 @@
 :root {
-    --steps: 16;
+    --steps: 10;
     --background: #1d1f20;
 }
 body {
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: var(--background);
 }
 .typing {
@@ -23,11 +23,11 @@ body {
     width: 100%;
     color: white;
     background: var(--background);
-    animation: typing 4s steps(var(--steps)) forwards, caret 1s infinite;
+    animation: typing 2s steps(var(--steps)) forwards, caret 0.5s infinite;
 }
 @keyframes typing {
     to {
-        width: 60%;
+        width: 65%;
    }
 }
 @keyframes caret {
