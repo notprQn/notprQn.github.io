@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>João Pedro</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href="styleModelo.css">
+  <link rel="stylesheet" href="styleTitle.css">
+  <link rel="stylesheet" href="styleHover.css">
   <script type = "module" src="script.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <model-viewer id="hotspot-camera-view-demo" src="models/scene.gltf" camera-controls touch-action="pan-y" camera-orbit="155deg 75deg 10m">
-    <h2 class = "nome">João Pedro.</h2>
-    <h2 class="bem-vindo">Bem-Vindo <br>ao meu Site.</h2>
+    <h1 class="typing">João Pedro.</h1>
+    <h1 class = 'bem-vindo'>Bem-Vindo ao<br> <strong>MEU PORTIFÓLIO</strong></h1><br>
     <div class = "modelo"><a href="https://sketchfab.com/3d-models/painterly-cottage-0772aec70d584c60a27000af5f6c1ef4" target="_blank"> Modelo Original </a></div>
     
     <button onclick="showDiv('0')" id="view-buttonSobre" slot="hotspot-coffee" data-position="-0.85 0.35 -0.8" data-normal="-0.85 0. -0.8" data-orbit="155deg 75deg 0.01m" data-target="-2m 0m 0m">
@@ -26,7 +26,7 @@
           <div class = "eu">
             <img src="img/eu.jpg" alt="Eu...kk" width="100">
           </div>
-              <h2 class = "sobre">Meu nome é João Pedro Resende Silva e estou buscando oportunidades de estágio ou 
+              <h2 class = "sobre">Meu nome é <strong>João Pedro Resende Silva</strong> e estou buscando oportunidades de estágio ou 
                 posição júnior na área de desenvolvimento. Com 19 anos, possuo uma sólida formação em programação, 
                 tendo iniciado meus estudos aos 13 anos. Embora tenha começado minha jornada com GameDev, nos últimos 
                 anos tenho me dedicado intensamente ao desenvolvimento web, 
@@ -38,10 +38,10 @@
       Cursos
       <div class="annotation" slot="annotation-cursos">
             <h2 class = "cursos">
-              <a href = "https://unitri.edu.br" target="_blank" class = "link">- Unitri - Centro Universitário do Triângulo</a>: Curso de Ciência da Computação (2022 - presente);<br><br>
-              <a href = "https://techers.com.br" target="_blank" class = "link">- Techers - Escola de Tecnologia</a>: Curso de Programação (2016 - 2022);<br><br>
-              <a href = "https://cs50.harvard.edu/x/2023/" target="_blank" class = "link">- CS50x</a>: Curso de programação C# Harvard (2021 - 2022);<br><br>
-              <a href = "https://drawabox.com" target="_blank" class = "link">- DrawABox</a>: Curso de Desenho online (2021 - 2022);<br><br>
+              <a href = "https://unitri.edu.br" target="_blank" class = "link"><strong>- Unitri - Centro Universitário do Triângulo</a></strong>: Curso de Ciência da Computação (2022 - presente);<br><br>
+              <a href = "https://techers.com.br" target="_blank" class = "link"><strong>- Techers - Escola de Tecnologia</a></strong>: Curso de Programação (2016 - 2022);<br><br>
+              <a href = "https://cs50.harvard.edu/x/2023/" target="_blank" class = "link"><strong>- CS50x</a></strong>: Curso de programação C# Harvard (2021 - 2022);<br><br>
+              <a href = "https://drawabox.com" target="_blank" class = "link"><strong>- DrawABox</a></strong>: Curso de Desenho online (2021 - 2022);<br><br>
             </h2>
         </div>
     </button>
@@ -49,8 +49,8 @@
     <button onclick="showDiv('2')" id="view-buttonExp" slot="hotspot-bird" data-position="0.4 2.3 0" data-normal="0 0 0" data-orbit="180deg 90deg 0.01m" data-target="0m 2m 3.5m">
       Experiências
         <div class="annotation" slot="annotation-exp">
-              <h2 class = "exp"> Experiências Profissionais:<br><br>
-                Techers - Escola de Tecnologia (2021 - 2022)<br><br>
+              <h2 class = "exp"> <strong>Experiências Profissionais:</strong><br><br>
+                <strong><a href = 'https://techers.com.br/' target = '_blank' class = 'link'>Techers</strong>- Escola de Tecnologia (2021 - 2022)</a><br><br>
                 Durante meu período como estagiário na escola de programação TECHERS, 
                 tive a oportunidade de colaborar em diversas atividades, sendo uma delas a criação e 
                 desenvolvimento do website da instituição. Desempenhei um papel chave tanto no back-end quanto no front-end, 
@@ -62,22 +62,31 @@
       Contatos
       <div class="annotation" slot="annotation-cont">
           <h2 class="contato">
-              <a href="https://www.linkedin.com/in/joão-pedro-resende-silva/" target="_blank" class="link">Linkedin: João Pedro Resende Silva</a><br><br>
-              <a href="https://twitter.com/NotprQn" target="_blank" class="link">Twitter: notprQn</a><br><br>
-              <a href="https://www.instagram.com/joaopedro.silva04/?next=%2F" target="_blank" class="link">Instagram: joaopedro.silva04</a><br><br>
-              Email: joaopedro.resende04@gmail.com<br><br>
-              Tel: +55 (34) 98411-3602<br><br>
-              <a href="https://github.com/notprQn" class="link" target="_blank">GitHub: NotprQn</a><br><br>
+              <a href="https://www.linkedin.com/in/joão-pedro-resende-silva/" target="_blank" class="link"><strong>Linkedin:</strong> João Pedro Resende Silva</a><br><br>
+              <a href="https://twitter.com/NotprQn" target="_blank" class="link"><strong>Twitter:</strong> notprQn</a><br><br>
+              <a href="https://www.instagram.com/joaopedro.silva04/?next=%2F" target="_blank" class="link"><strong>Instagram:</strong> joaopedro.silva04</a><br><br>
+              <a class = 'link'><strong>Email:</strong> joaopedro.resende04@gmail.com</a><br><br>
+              <a class = 'link'><strong>Tel:</strong> +55(34)98411-3602</a><br><br>
+              <a href="https://github.com/notprQn" class="link" target="_blank"><strong>Github:</strong> NotprQn</a><br><br>
           </h2>
       </div>
     </button>
   </model-viewer>
 
   <script>
-      function showDiv(number) {
-        const annotationDiv = document.getElementsByClassName('annotation')[number];
-        annotationDiv .classList.toggle('active');
+    function showDiv(number) {
+      const annotationDivs = document.getElementsByClassName('annotation');
+      const annotationDiv = annotationDivs[number];
+      const isOpen = annotationDiv.classList.contains('active');
+
+      for (let i = 0; i < annotationDivs.length; i++) {
+          annotationDivs[i].classList.remove('active');
       }
+
+      if (!isOpen) {
+          annotationDiv.classList.add('active');
+      }
+    }
   </script>
   
 </body>

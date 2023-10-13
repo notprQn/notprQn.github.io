@@ -1,0 +1,18 @@
+strong {
+    position: relative;
+    z-index: -1;
+  }
+  
+  strong::before {
+    /* Highlight color */
+    background-color: #d7b94c;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }

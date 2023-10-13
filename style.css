@@ -9,7 +9,7 @@ div{
 
 a{
   color: #f1f1f1;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-style: none;
   padding-left: 20px;
   z-index: 10;
@@ -20,7 +20,7 @@ body{
 }
 
 h2{
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #f1f1f1;
   position: relative;
   padding-left: 20px;
@@ -48,14 +48,14 @@ img{
 
 .link{
   color: #1f1f1f;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-style: none;
   padding-bottom: 100px;
   z-index: -1;
 }
 
 .sobre{
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
   padding-top: 120px;
@@ -66,7 +66,7 @@ img{
 }
 
 .cursos{
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
   padding-top: 30px;
@@ -77,7 +77,7 @@ img{
 }
 
 .exp{
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
   padding-top: 30px;
@@ -86,9 +86,13 @@ img{
   padding-right: 30px;
   text-align: start;
 }
+
+.content{
+  z-index: -1;
+} 
 
 .contato{
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
   padding-top: 30px;
@@ -96,20 +100,15 @@ img{
   padding-left: 30px;
   padding-right: 30px;
   text-align: start;
-}
-
-.nome{
-  z-index: -1;
-  padding-top: 0.2em;
-  font-family: "Boldfinger", "Roboto";
 }
 
 .bem-vindo{
-  font-family: "Timeless", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #f1f1f1;
   position: relative;
   font-size: clamp(1rem, -0.5rem + 5.333vw, 5rem);
   z-index: -1;
+  padding-left: 0.3em;
 }
 
 .modelo{
@@ -170,7 +169,7 @@ model-viewer{
   position: absolute;
   border-radius: 10px;
   padding: 10px;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   display: none;
 }
 :not(:defined) > * {
@@ -185,7 +184,7 @@ model-viewer{
   padding: 10px;
   width: 500px;
   height: 500px;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px; 
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -203,7 +202,7 @@ model-viewer{
   padding: 10px;
   width: 500px;
   height: 500px;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -220,7 +219,7 @@ model-viewer{
   padding: 10px;
   width: 520px;
   height: 480px;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -237,7 +236,7 @@ model-viewer{
   padding: 10px;
   width: 500px;
   height: 400px;
-  font-family: "Prompt", "Roboto";
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -255,7 +254,7 @@ model-viewer{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 12px;
   font-weight: 700;
   max-width: 128px;
@@ -269,9 +268,8 @@ model-viewer{
 }
 
 #view-buttonSobre:hover{
-  background: #1f1f1f;
-  color: #f1f1f1;
-  
+  color: #1f1f1f;
+  background-color: #d7b94c;
 }
 
 #view-buttonCurso {
@@ -282,7 +280,7 @@ model-viewer{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 12px;
   font-weight: 700;
   max-width: 128px;
@@ -296,9 +294,8 @@ model-viewer{
 }
 
 #view-buttonCurso:hover{
-  background: #1f1f1f;
-  color: #f1f1f1;
-  
+  color: #1f1f1f;
+  background-color: #d7b94c; 
 }
 
 #view-buttonExp {
@@ -309,7 +306,7 @@ model-viewer{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 12px;
   font-weight: 700;
   max-width: 128px;
@@ -323,9 +320,8 @@ model-viewer{
 }
 
 #view-buttonExp:hover{
-  background: #1f1f1f;
-  color: #f1f1f1;
-  
+  color: #1f1f1f;
+  background-color: #d7b94c;
 }
 
 #view-buttonCont {
@@ -336,7 +332,7 @@ model-viewer{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 12px;
   font-weight: 700;
   max-width: 128px;
@@ -350,7 +346,6 @@ model-viewer{
 }
 
 #view-buttonCont:hover{
-  background: #1f1f1f;
-  color: #f1f1f1;
-  
+  color: #1f1f1f;
+  background-color: #d7b94c;
 }
