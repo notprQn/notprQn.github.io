@@ -15,33 +15,6 @@ a{
   z-index: 10;
 }
 
-.bloco{
-  padding: 20px;
-}
-
-.eu{
-  padding-left: 170px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-}
-
-img{
-  display:block;
-  z-index: 1;
-  border-radius: 50%;
-  padding-left: 20px;
-}
-
-.link{
-  color: #1f1f1f;
-  font-family: "Prompt", "Roboto";
-  font-style: none;
-  padding-bottom: 100px;
-  z-index: -1;
-}
-
-
 body{
   background-color: #1f1f1f;
 }
@@ -53,6 +26,32 @@ h2{
   padding-left: 20px;
   font-size: clamp(2rem, -0.875rem + 8.333vw, 10rem);
   padding-left: clamp(0, 10vw, 10rem);
+}
+
+img{
+  display:block;
+  z-index: 1;
+  border-radius: 50%;
+  padding-left: 20px;
+}
+
+.bloco{
+  padding: 20px;
+}
+
+.eu{
+  padding-left: 170px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.link{
+  color: #1f1f1f;
+  font-family: "Prompt", "Roboto";
+  font-style: none;
+  padding-bottom: 100px;
+  z-index: -1;
 }
 
 .sobre{
@@ -101,15 +100,15 @@ h2{
 
 .nome{
   z-index: -1;
-  
+  padding-top: 0.2em;
+  font-family: "Boldfinger", "Roboto";
 }
 
 .bem-vindo{
-  font-family: "Prompt", "Roboto";
+  font-family: "Timeless", "Roboto";
   color: #f1f1f1;
   position: relative;
   font-size: clamp(1rem, -0.5rem + 5.333vw, 5rem);
-  padding-left: 20px;
   z-index: -1;
 }
 
@@ -187,10 +186,9 @@ model-viewer{
   width: 500px;
   height: 500px;
   font-family: "Prompt", "Roboto";
-  font-size: 16px;
-  display: none;
+  font-size: 16px; 
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 .annotation[slot="annotation-sobre"].active {
   display: block;
@@ -207,7 +205,12 @@ model-viewer{
   height: 500px;
   font-family: "Prompt", "Roboto";
   font-size: 16px;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.annotation[slot="annotation-cursos"].active {
+  display: block;
+  opacity: 1;
 }
 
 .annotation[slot="annotation-exp"]{
@@ -219,7 +222,12 @@ model-viewer{
   height: 480px;
   font-family: "Prompt", "Roboto";
   font-size: 16px;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.annotation[slot="annotation-exp"].active {
+  display: block;
+  opacity: 1;
 }
 
 .annotation[slot="annotation-cont"]{
@@ -231,7 +239,12 @@ model-viewer{
   height: 400px;
   font-family: "Prompt", "Roboto";
   font-size: 16px;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.annotation[slot="annotation-cont"].active {
+  display: block;
+  opacity: 1;
 }
 
 #view-buttonSobre {
@@ -252,6 +265,13 @@ model-viewer{
   width: max-content;
   height: max-content;
   transform: translate3d(-50%, -50%, 0);
+  transition: 0.2s ease-in-out;
+}
+
+#view-buttonSobre:hover{
+  background: #1f1f1f;
+  color: #f1f1f1;
+  
 }
 
 #view-buttonCurso {
@@ -272,6 +292,13 @@ model-viewer{
   width: max-content;
   height: max-content;
   transform: translate3d(-50%, -50%, 0);
+  transition: 0.2s ease-in-out;
+}
+
+#view-buttonCurso:hover{
+  background: #1f1f1f;
+  color: #f1f1f1;
+  
 }
 
 #view-buttonExp {
@@ -292,6 +319,13 @@ model-viewer{
   width: max-content;
   height: max-content;
   transform: translate3d(-50%, -50%, 0);
+  transition: 0.2s ease-in-out;
+}
+
+#view-buttonExp:hover{
+  background: #1f1f1f;
+  color: #f1f1f1;
+  
 }
 
 #view-buttonCont {
@@ -312,4 +346,11 @@ model-viewer{
   width: max-content;
   height: max-content;
   transform: translate3d(-50%, -50%, 0);
+  transition: 0.2s ease-in-out;
+}
+
+#view-buttonCont:hover{
+  background: #1f1f1f;
+  color: #f1f1f1;
+  
 }
