@@ -31,7 +31,9 @@ h2{
 img{
   display:block;
   z-index: 1;
-  border-radius: 50%;
+}
+
+.imgProg{
   padding-left: 20px;
 }
 
@@ -40,11 +42,11 @@ img{
 }
 
 .eu{
-  padding-left: 170px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  border-top: 15px;
+  border-bottom: 20px;
   z-index: -1;  
+  border-radius: 30%;
+  border: 3px solid #1f1f1f;
 }
 
 .link{
@@ -55,15 +57,38 @@ img{
   z-index: -1;
 }
 
+.sobreTitulo{
+  font-family: 'Inconsolata', 'Consolas', 'monospace';
+  color: #1f1f1f;
+  font-size: 26px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  bottom: 100px;
+  left: 45px;
+}
+
+.sobreDesc{
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  bottom: 130px;
+  left: 30px;
+}
+
 .sobre{
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
-  padding-top: 120px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: start;
+  height: 200px;
+  width: 450px;
+  bottom: 120px;
 }
 
 .cursos{
@@ -86,8 +111,7 @@ img{
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: start;
-  
+  text-align: start; 
   overflow: auto;
 }
 
