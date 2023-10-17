@@ -86,8 +86,6 @@ img{
   padding-left: 30px;
   padding-right: 30px;
   text-align: start;
-  height: 200px;
-  width: 450px;
   bottom: 120px;
 }
 
@@ -209,9 +207,8 @@ model-viewer{
   position: absolute;
   transform: translate(200px, -300px);
   border-radius: 10px;
-  padding: 10px;
   width: 500px;
-  height: 500px;
+  height: inline-block;
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px; 
   opacity: 0;
@@ -229,7 +226,7 @@ model-viewer{
   border-radius: 10px;
   padding: 10px;
   width: 500px;
-  height: 500px;
+  height: inline-block;
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
@@ -246,7 +243,7 @@ model-viewer{
   border-radius: 10px;
   padding: 10px;
   width: 520px;
-  height: 480px;
+  height: inline-block;
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
@@ -263,7 +260,7 @@ model-viewer{
   border-radius: 10px;
   padding: 10px;
   width: 500px;
-  height: 400px;
+  height: inline-block;
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   font-size: 16px;
   opacity: 0;
