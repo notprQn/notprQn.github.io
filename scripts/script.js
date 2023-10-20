@@ -9,8 +9,3 @@ let dataset = annotation.dataset;
 modelViewer2.querySelectorAll('button').forEach((hotspot) => {
     hotspot.addEventListener('click', () => annotationClicked(hotspot));
 });
-
-
-
-
-
