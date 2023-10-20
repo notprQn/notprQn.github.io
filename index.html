@@ -9,11 +9,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/perfil.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleTitle.css">
-    <link rel="stylesheet" href="styleHover.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleHover.css">
+    <link rel="stylesheet" href="styles/styleTitle.css">
 
-    <script type = "module" src="script.js"></script>
+    <script type = "module" src="scripts/script.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -28,7 +28,7 @@
       for (let i = 0; i < annotationDivs.length; i++) {
         annotationDivs[i].classList.remove('active');
       }
-      
+
       if (!isOpen) {
         annotationDiv.classList.add('active');
       }
