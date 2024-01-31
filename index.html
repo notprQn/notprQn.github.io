@@ -17,24 +17,24 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+      function showDiv(number) {
+        const annotationDivs = document.getElementsByClassName('annotation');
+        const annotationDiv = annotationDivs[number];
+        const isOpen = annotationDiv.classList.contains('active');
+
+        for (let i = 0; i < annotationDivs.length; i++) {
+          annotationDivs[i].classList.remove('active');
+        }
+
+        if (!isOpen) {
+          annotationDiv.classList.add('active');
+        }
+      }
+    </script>
   </head>
   <body>
-  <script>
-    function showDiv(number) {
-      const annotationDivs = document.getElementsByClassName('annotation');
-      const annotationDiv = annotationDivs[number];
-      const isOpen = annotationDiv.classList.contains('active');
-
-      for (let i = 0; i < annotationDivs.length; i++) {
-        annotationDivs[i].classList.remove('active');
-      }
-
-      if (!isOpen) {
-        annotationDiv.classList.add('active');
-      }
-    }
-  </script>
-
     <model-viewer id="hotspot-camera-view-demo" 
     src="models/scene.gltf" 
     camera-controls touch-action="pan-y" 

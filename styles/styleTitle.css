@@ -16,7 +16,14 @@ body {
     z-index: -1;
     padding-left: 0.3em;
 }
-.typing::after {
+
+@media only screen and (max-width: 600px) {
+    .typing {
+      font-size: 16px;
+    }
+  }
+  
+  .typing::after {
     content: "|";
     position: absolute;
     right: 0;
@@ -25,13 +32,36 @@ body {
     background: var(--background);
     animation: typing 2s steps(var(--steps)) forwards, caret 0.5s infinite;
 }
+
+@media only screen and (max-width: 600px) {
+    .typing::after {
+        display: none; /* Esconder o cursor "|" em telas menores */
+    }
+}
+
 @keyframes typing {
     to {
-        width: 65%;
-   }
+        width: 62%;
+    }
 }
+
 @keyframes caret {
     50% {
         color: transparent;
-   }
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    @keyframes typing {
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes caret {
+        50% {
+            color: white;
+        }
+    }
+}
+
