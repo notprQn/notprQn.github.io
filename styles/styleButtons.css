@@ -114,7 +114,7 @@
     max-width: 128px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
-    position: absolute;
+    position: fixed;
     width: max-content;
     height: max-content;
     transform: translate3d(-50%, -50%, 0);

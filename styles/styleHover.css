@@ -6,6 +6,7 @@ strong {
   strong::before {
     /* Highlight color */
     background-color: #d7b94c;
+    color: #d7b94c;
     z-index: -1;
     content: "";
     position: absolute;
