@@ -1,0 +1,81 @@
+.annotation{
+    background-color: #f1f1f1;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Inconsolata', 'Consolas', 'monospace';
+    display: none;
+  }
+  :not(:defined) > * {
+    display: none;
+  }
+  
+  .annotation[slot="annotation-sobre"]{
+    background-color: #f1f1f1;
+    position: absolute;
+    transform: translate(200px, -300px);
+    border-radius: 10px;
+    width: 500px;
+    height: 470px;
+    height: inline-block;
+    font-family: 'Inconsolata', 'Consolas', 'monospace';
+    font-size: 16px; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .annotation[slot="annotation-sobre"].active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .annotation[slot="annotation-cursos"]{
+    background-color: #f1f1f1;
+    position: absolute;
+    transform: translate(-600px, -200px);
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: inline-block;
+    font-family: 'Inconsolata', 'Consolas', 'monospace';
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .annotation[slot="annotation-cursos"].active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .annotation[slot="annotation-exp"]{
+    background-color: #f1f1f1;
+    transform: translate(200px, -50px);
+    border-radius: 10px;
+    padding: 10px;
+    width: 520px;
+    height: inline-block;
+    font-family: 'Inconsolata', 'Consolas', 'monospace';
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .annotation[slot="annotation-exp"].active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .annotation[slot="annotation-cont"]{
+    background-color: #f1f1f1;
+    transform: translate(200px, -200px);
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: inline-block;
+    font-family: 'Inconsolata', 'Consolas', 'monospace';
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .annotation[slot="annotation-cont"].active {
+    display: block;
+    opacity: 1;
+  }

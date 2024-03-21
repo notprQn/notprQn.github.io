@@ -9,9 +9,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/perfil.png">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleHover.css">
     <link rel="stylesheet" href="styles/styleTitle.css">
+    <link rel="stylesheet" href="styles/styleButtons.css">
+    <link rel="stylesheet" href="styles/styleModel.css">
+    <link rel="stylesheet" href="styles/styleAnnotations.css">
 
     <script type = "module" src="scripts/script.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
@@ -32,6 +36,13 @@
           annotationDiv.classList.add('active');
         }
       }
+      function closeDiv() {
+        const annotationDivs = document.getElementsByClassName('annotation');
+
+        for (let i = 0; i < annotationDivs.length; i++) {
+            annotationDivs[i].classList.remove('active');
+        }
+      }
     </script>
   </head>
   <body>
@@ -42,19 +53,25 @@
     slot="progress-bar"
     interaction-prompt-style="basic"
     interpolation-decay="100"
+    loading="eager
+    alt="A 3D model of an abstract scene"
     >
 
       <h1 class="typing">João Pedro</h1>
       <h1 class = 'bem-vindo'>Bem-Vindo ao<br> <strong>MEU PORTIFÓLIO</strong></h1><br>
       <div class = "modelo"><a href="https://sketchfab.com/3d-models/painterly-cottage-0772aec70d584c60a27000af5f6c1ef4" target="_blank"> Modelo Original </a></div>
       
-      <button onclick="showDiv('0')" id="view-buttonSobre" slot="hotspot-coffee" data-position="-0.85 0.35 -0.8" data-normal="-0.85 0. -0.8" data-orbit="155deg 75deg 0.01m" data-target="-2m 0m 0m">
+      <button onclick="showDiv('0')" 
+      id="view-buttonSobre" 
+      slot="hotspot-coffee" 
+      data-position="-0.85 0.35 -0.8" 
+      data-normal="-0.85 0. -0.8" 
+      data-orbit="155deg 75deg 0.01m" 
+      data-target="-2m 0m 0m">
         Sobre Mim        
         <div class="annotation" slot="annotation-sobre">
           <img class = 'eu' src="img/eu.jpg" alt="Eu...kk" width="100">
           <h2 class = "sobreTitulo"><strong>João Pedro Resende Silva</strong> <br><br> Desenvolvedor</h2>
-          
-            <!-- <h2 class = "sobre">Olá! Meu nome é João Pedro, sou um desenvolvedor de software  </h2> -->
 
             <h2 class = 'sobre'>
 
@@ -80,7 +97,13 @@
         </div>  
       </button>  
       
-      <button onclick="showDiv('1')" id="view-buttonCurso" slot="hotspot-calendar" data-position="0.35 0.50 -0.4" data-normal="0.35 0.50 -0.4" data-orbit="190deg 85deg 1m" data-target="1.2m 0.1m 3m">
+      <button onclick="showDiv('1')" 
+      id="view-buttonCurso" 
+      slot="hotspot-calendar" 
+      data-position="0.35 0.50 -0.4" 
+      data-normal="0.35 0.50 -0.4" 
+      data-orbit="190deg 85deg 1m" 
+      data-target="1.2m 0.1m 3m">
         Cursos
         <div class="annotation" slot="annotation-cursos">
           <h2 class = "cursos">
@@ -92,7 +115,12 @@
         </div>
       </button>
 
-      <button onclick="showDiv('2')" id="view-buttonExp" slot="hotspot-bird" data-position="0.4 2.3 0" data-normal="0 0 0" data-orbit="180deg 90deg 0.01m" data-target="0m 2m 3.5m">
+      <button onclick="showDiv('2')" 
+      id="view-buttonExp" slot="hotspot-bird" 
+      data-position="0.4 2.3 0" 
+      data-normal="0 0 0" 
+      data-orbit="180deg 90deg 0.01m" 
+      data-target="0m 2m 3.5m">
         Experiências
         <div class="annotation" slot="annotation-exp">
           <h2 class = "exp"> <strong>Experiências Profissionais:</strong><br><br>
@@ -110,7 +138,13 @@
         </div>  
       </button> 
 
-      <button onclick="showDiv('3')" id="view-buttonCont" slot="hotspot-cont" data-position="0.4 1 0.77" data-normal="0.4 1 0.77" data-orbit="90deg 90deg 0.01m" data-target="-3m 1m 0.5m">
+      <button onclick="showDiv('3')" 
+      id="view-buttonCont" 
+      slot="hotspot-cont" 
+      data-position="0.4 1 0.77" 
+      data-normal="0.4 1 0.77" 
+      data-orbit="90deg 90deg 0.01m" 
+      data-target="-3m 1m 0.5m">
         Contatos
         <div class="annotation" slot="annotation-cont">
           <h2 class="contato">
@@ -124,6 +158,12 @@
             <img src="https://readme-typing-svg.demolab.com/?lines=Caso%20esteja%20interessado,%20entre%20em%20contato!;Obrigado!&font=Inconsolata%20Code&center=true&width=455&height=45&vCenter=false&pause=1000&size=18&color=1f1f1f" />
           </h2>
         </div>
+      </button>
+
+      <button onclick="closeDiv()"
+          id="view-buttonCenter"  
+          data-orbit="155deg 75deg 10m" >
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABdElEQVR4nOWVsU4CQRCGv/MBlBZaQ2ylNZgIRPSBBAvBN1EojdqijWKQ+ArwBoqJWmtzmE3+TSaX49iTRuOfbLI7O/vP8M/MAb8Mc62/EyACGkAfmJoAbt8D6quQbwEjQ7poPQDlvOS7wIcIXoAOsG1I3b6rO3d+B6p5MvfkF8B6Rg02gEsTpByi+ciQR7IfAjcmgNsfmDdXsg+XBWjI8dlkfgrEKdrHksmhAMxkr2UF6MvpxGQeA5/AEVDUasnm7pry7ertWVaAqSmiw63OjjyJtpHLoaLzJI14WSsW5fcEjLUvBbzLHWAMPP4kQFKiSkKiVorvse4GIRJ59OTkBgu1oi9yW1mXRP6lu33TbUuLXDfT64bId8eiNu2ktOkeGYj0bZlrQiPZm5LCkw9M5mvAtex3BKCssZ9rQl12HsniFQz5G7BJIKomyEwy+SL6JnCavxrynVBy+0uGAa14nyfzNNSAc7WfJ52oWzIL+j/+k1kV38ULuGRk8qrHAAAAAElFTkSuQmCC">
       </button>
     </model-viewer> 
   </body>
