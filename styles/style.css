@@ -88,17 +88,20 @@ img{
   text-align: start;
   bottom: 50px;
   position: absolute;
+  overflow: auto;
 }
 
 .cursos{
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
   font-size: 21px;
+  height: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: start;
+  overflow: auto;
 }
 
 .exp{
@@ -121,6 +124,7 @@ img{
 .contato{
   font-family: 'Inconsolata', 'Consolas', 'monospace';
   color: #1f1f1f;
+  height: 400px;
   font-size: 21px;
   padding-top: 30px;
   padding-bottom: 30px;
